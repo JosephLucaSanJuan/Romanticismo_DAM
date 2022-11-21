@@ -1,0 +1,57 @@
+/****** */
+
+@font-face {
+  font-family: titulo;
+  src: url('../fonts/');
+}
+
+@font-face {
+  font-family: texto;
+  src: url('../fonts/');
+}
+
+html {}
+
+body {font-family: texto;
+      font-size: 1.2em;
+      /*padding: 4%;*/
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+      background-image: url('../images/fondo.jpg');}
+
+#wrapper {
+  width: 80%;
+  background-color: aqua;
+  margin: auto;
+  padding: 2%;
+}
+
+h1, h2, h3 {font-family: titulo;}
+
+h1 {text-decoration: underline;}
+
+p {text-align: justify;
+  text-indent: 2em;}
+
+#espronceda {width: 20%;
+             float: right;
+             padding: 15px;}
+
+.limpiafloat {
+  clear: both; /*anula el */
+}
+
+
+/* con float consigo que la imagen salga con el texto alrededor */
+
+@media only screen and (width<=900px) {
+  #espronceda {width: 100%;}
+}
+
+@media only screen and (width<=500px) {
+  #wrapper {width: 100%;}
+
+  #espronceda {width: 100%;
+               padding: 0 0 15px 0;}
+}
